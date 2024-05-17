@@ -1,0 +1,142 @@
+.medicine-card-container {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 26px 58px 0 rgba(181, 181, 181, 0.18),
+    0 5px 20px 0 rgba(180, 180, 180, 0.22);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 48%,
+    rgba(53, 199, 131, 0.01726628151260501) 66%,
+    rgba(53, 199, 131, 0.09289653361344541) 100%
+  );
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.medicine-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.actions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.medicine-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.option-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.option-btn {
+  border: 1px solid #5d5d5d;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 8px 12px;
+  background-color: #fff;
+  color: #5d5d5d;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.option-btn:hover {
+  background-color: #f1f1f1;
+  border-color: #bbb;
+}
+
+.option-btn-selected {
+  background-color: #e0f7fa;
+  border-color: #009688;
+  color: black;
+  font-weight: 600;
+  box-shadow: 0 0px 5px 0 rgb(0, 116, 46), 0 0px 5px 0 rgba(0, 116, 46, 0.456);
+}
+
+.medicine-info {
+  text-align: center;
+}
+
+.medicine-info h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.medicine-info p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.unavailable {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.medicine-price {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.medicine-card-content {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions-container {
+  width: 350px;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.medicine-info {
+  flex: 1;
+  text-align: left;
+}
+
+.medicine-price,
+.unavailable {
+  flex: 1;
+  text-align: center;
+}
+.option-btn-unavailable {
+  border: 1px dashed #ccc;
+  color: grey;
+  cursor: not-allowed;
+}
+
+.option-btn-unavailable-selected {
+  border: 1px dashed green;
+  background-color: lightgreen;
+  color: grey;
+  cursor: not-allowed;
+}
+
+.show-more-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: #00349d;
+  border: none;
+  cursor: pointer;
+}
